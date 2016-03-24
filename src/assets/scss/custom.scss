@@ -1,0 +1,110 @@
+$yellow-c: #f2c100;
+
+.c-layout-revo-slider{
+  position: relative;
+  z-index: 2;
+  box-shadow:2px 4px 10px rgba(#333,0.5);
+}
+
+.about-content{
+  background: #fff;
+  padding: 30px 0 10px;
+  #about-mokayo{
+    width: 80%;
+    background-color: rgba($yellow-c, 0.7);
+    box-shadow:0px 4px 10px rgba(#333,0.5);
+    margin-bottom: -80px;
+    padding-top: 60px;
+    span{
+      margin-left: 10px;
+    }
+    p{
+      color: #3f444a + #111;
+      line-height: 26px;
+      padding: 20px 5% 10% 10%;
+    }
+  }
+}
+
+.feature-content{
+  .c-bg-parallax{
+    padding: 100px 0 60px;
+    box-shadow:0px 4px 10px rgba(#333,0.3);
+    position: relative;
+    z-index: 1;
+    .c-content-feature-8{
+      .c-card{
+        padding: 40px;
+        span{
+          display: block;
+          width: 40px;
+          height: 40px;
+          margin: 0 auto 20px;
+          color: #c5b96b;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+.course-content{
+  position: relative;
+  .course-bg{
+    background-color: rgba($yellow-c, 0.7);
+    width: 88%;
+    height: 60% ;
+    position: absolute;
+    left: 6%;
+    bottom: 0;
+    padding-top: 30px;
+  }
+  .c-content-person-1-slider{
+    padding-top: 40px;
+    border-top: 1px solid #ddd;
+    .c-content-person-1{
+      background-color: #333;
+      .c-caption{
+        height: 200px;
+        background-position: top center;
+        background-size: cover;
+      }
+      .c-body{
+        padding: 30px 30px 20px;
+      }
+      .c-date{
+        color: #ddd;
+        line-height: 32px;
+        padding: 15px 0;
+       i{
+         margin-right: 10px;
+       } 
+      }
+      .c-tags{
+        background-color: #CFD8DC;
+        width:100%;
+        padding: 5px 30px;
+        span{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+.parter-content{
+  box-shadow:0px -4px 10px rgba(#333,0.1);
+  position: relative;
+  z-index: 2;
+  .parter-box{
+    border-top: 1px solid #ddd;
+    padding: 40px 0 20px;
+  }
+}
+
+.subscribe-content{
+  i{
+    color: $yellow-c;
+    margin-right: 10px;
+  }
+}

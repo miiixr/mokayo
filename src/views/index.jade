@@ -1,0 +1,247 @@
+extends ./layout/_layout.jade
+
+block content
+  
+  //- BEGIN: HEADER
+  header.c-layout-header.c-layout-header-4.c-bordered.c-layout-header-default-mobile.c-header-transparent-dark(data-minimize-offset='80')
+    .c-navbar
+      .container
+        //- BEGIN: BRAND
+        .c-navbar-wrapper.clearfix
+          .c-brand.c-pull-left
+            a.c-logo(href='index.html')
+              img.c-desktop-logo(src='assets/images/logo.png', alt='JANGO')
+              img.c-desktop-logo-inverse(src='assets/images/logo.png', alt='JANGO')
+              img.c-mobile-logo(src='assets/images/logo.png', alt='JANGO')
+              
+            button.c-hor-nav-toggler(type='button', data-target='.c-mega-menu')
+              span.c-line
+              span.c-line
+              span.c-line
+            button.c-topbar-toggler(type='button')
+              i.fa.fa-ellipsis-v
+            button.c-search-toggler(type='button')
+              i.fa.fa-search
+              
+          //- BEGIN: QUICK SEARCH
+          form.c-quick-search(action='#')
+            input.form-control(type='text', name='query', placeholder='Type to search...', value='', autocomplete='off')
+            span.c-theme-link ×
+
+          //- BEGIN: MEGA MENU
+          nav.c-mega-menu.c-mega-menu-dark.c-mega-menu-dark-mobile.c-fonts-uppercase.c-fonts-bold.c-pull-right
+            ul.nav.navbar-nav.c-theme-nav
+              li.c-menu-type-classic.c-active
+                a.c-link.dropdown-toggle(href='javascript:;')
+                  | 首頁
+              li.c-menu-type-classic
+                a.c-link.dropdown-toggle(href='#')
+                  | 課程
+              li.c-menu-type-classic
+                a.c-link.dropdown-toggle(href='http://blog.mokayo.com/')
+                  | 部落格
+              li.c-menu-type-classic
+                a.c-link.dropdown-toggle(href='#')
+                  | 關於
+                ul.dropdown-menu.c-menu-type-classic.c-pull-left
+                  li
+                    a(href='javascript:;') 團隊介紹
+              li.c-menu-type-classic
+                a.c-link.dropdown-toggle(href='javascript:;')
+                  | FAQ
+
+                    
+              li.c-search-toggler-wrapper
+                a.c-btn-icon.c-search-toggler(href='#')
+                  i.fa.fa-search
+
+  //- BEGIN: PAGE CONTAINER
+  main.c-layout-page
+    //- BEGIN: LAYOUT/SLIDERS/REVO-SLIDER-11
+    section.c-layout-revo-slider.c-layout-revo-slider-11
+      .tp-banner-container.tp-fullscreen.tp-fullscreen-mobile.c-arrow-darken(data-bullets-pos='center')
+        .tp-banner
+          ul
+            //- BEGIN: SLIDE #1
+            li(data-transition='fade', data-slotamount='1', data-masterspeed='1000')
+              img(alt='', src='assets/images/cover-1.jpg', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
+              .caption.customin.customout(data-x='center', data-y='center', data-hoffset='', data-voffset='-50', data-speed='500', data-start='1000', data-customin='x:0;y:0;z:0;rotationX:0.5;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-easing='Back.easeOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='600')
+                h3.c-main-title.c-font-48.c-font-bold.c-font-center.c-font-uppercase.c-font-dark.c-block 
+                  | 技術學習零距離
+              .caption.lft(data-x='center', data-y='center', data-voffset='140', data-speed='900', data-start='2000', data-easing='easeOutExpo')
+                // a.c-action-btn.btn.btn-xlg.c-btn-border-1x.c-btn-square.btn-default.c-btn-bold.c-btn-uppercase(href='#') 打造完全開發環境，零時差遠端技術學習
+
+
+    //- BEGIN: CONTENT/FEATURES/FEATURES-11
+    section.about-content#about
+      #about-mokayo
+        h3.c-font-24.c-font-center 
+          | We Are 
+          span.c-font-36.c-font-white MOKAYO
+        p.c-font-16
+          | Mokayo 為台灣原住民，鄒語，原意為收成祭典，也是一種由長輩帶領新一代年輕人互相族群認識，瞭解。
+          br
+          | Mokayo 透過資深工程師帶領新進入門新手，讓熱情的學員，初學者也可以踏入技術的殿堂，達到技術的傳承，知識的延續。
+          
+    section.feature-content
+      .c-content-box.c-size-md.c-bg-parallax
+        .container
+          .c-content-feature-8.c-opt-1
+            ul.c-grid
+              li
+                .c-card.c-bg-opacity-1
+                  span.icon-share
+                  h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center
+                    | 虛實整合
+                  p.c-font-white.c-font-16
+                    | 專業師資內容，業界資深工程師及架構師帶領入門，從基礎開發到實戰體驗，跟著前輩的經驗逐步學習。
+              li
+                .c-card.c-bg-opacity-1
+                  span.icon-rocket
+                  h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center
+                    | 業界經驗
+                  p.c-font-white.c-font-16
+                    | 瞭解第一手最新技術，學習最貼近業界技術趨勢的教學內容。 
+              li
+                .c-card.c-bg-opacity-1
+                  span.icon-speedometer
+                  h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center
+                    | 實際應用
+                  p.c-font-white.c-font-16
+                    | 打造完全開發環境，透過遠端方式零時差進行技術學習。
+
+    //- BEGIN: CONTENT/SLIDERS/TEAM-1
+    section.course-content#course
+      .c-content-box.c-size-md.c-bg-white
+        .c-content-title-1
+          h3.c-center.c-font-bold 課程
+          
+        .container
+          .course-bg
+          .c-content-person-1-slider(data-slider='owl',  data-items='3', data-desktop-items='3', data-tablet-items='3', data-mobile-small-items='2')
+            .owl-carousel.owl-theme.c-theme
+              .item
+                .c-content-person-1
+                  .c-caption.c-content-overlay(style="background-image:url('assets/img/content/stock/010.jpg')")
+                    .c-overlay-wrapper
+                      .c-overlay-content
+                        p.c-font-white 課程介紹課程介紹課程介紹課程介紹課程介紹
+                  .c-body
+                    .c-head.c-font-20.c-font-yellow-3
+                      | HTML / CSS 前端基礎課程 
+                      br
+                      | Front-end for Newbie
+                    
+                    .c-date.c-font-20
+                      i.fa.fa-calendar
+                      | 2016.04.01
+                      br
+                      i.fa.fa-clock-o
+                      | 09:00 - 17:00
+                    button.btn.btn-block.btn-danger(type='button') 立即報名
+                  .c-tags
+                    span.icon-tag
+                    | HTML, CSS, Newbie
+              
+              .item
+                .c-content-person-1
+                  .c-caption.c-content-overlay(style="background-image:url('assets/img/content/stock/09.jpg')")
+                    .c-overlay-wrapper
+                      .c-overlay-content
+                        p.c-font-white 課程介紹課程介紹課程介紹課程介紹課程介紹
+                        
+                  .c-body
+                    .c-head.c-font-20.c-font-yellow-3
+                      | Jenkins 環境維運課程 
+                      br
+                      | Jenkins DevOps for Newbie
+                      
+                    .c-date.c-font-20
+                      i.fa.fa-calendar
+                      | 2016.04.01
+                      br
+                      i.fa.fa-clock-o
+                      | 09:00 - 17:00
+                    button.btn.btn-block.btn-danger(type='button') 立即報名
+                  .c-tags
+                    span.icon-tag
+                    | Jenkins, Newbie
+              .item
+                .c-content-person-1
+                  .c-caption.c-content-overlay(style="background-image:url('assets/img/content/stock/010.jpg')")
+                    .c-overlay-wrapper
+                      .c-overlay-content
+                        p.c-font-white 課程介紹課程介紹課程介紹課程介紹課程介紹
+                  .c-body
+                    .c-head.c-font-20.c-font-yellow-3
+                      | HTML / CSS 前端基礎課程 
+                      br
+                      | Front-end for Newbie
+                    
+                    .c-date.c-font-20
+                      i.fa.fa-calendar
+                      | 2016.04.01
+                      br
+                      i.fa.fa-clock-o
+                      | 09:00 - 17:00
+                    button.btn.btn-block.btn-danger(type='button') 立即報名
+                  .c-tags
+                    span.icon-tag
+                    | HTML, CSS, Newbie
+              
+              .item
+                .c-content-person-1
+                  .c-caption.c-content-overlay(style="background-image:url('assets/img/content/stock/09.jpg')")
+                    .c-overlay-wrapper
+                      .c-overlay-content
+                        p.c-font-white 課程介紹課程介紹課程介紹課程介紹課程介紹
+                        
+                  .c-body
+                    .c-head.c-font-20.c-font-yellow-3
+                      | Jenkins 環境維運課程 
+                      br
+                      | Jenkins DevOps for Newbie
+                      
+                    .c-date.c-font-20
+                      i.fa.fa-calendar
+                      | 2016.04.01
+                      br
+                      i.fa.fa-clock-o
+                      | 09:00 - 17:00
+                    button.btn.btn-block.btn-danger(type='button') 立即報名
+                  .c-tags
+                    span.icon-tag
+                    | Jenkins, Newbie   
+
+    //- BEGIN:CONTENT/SLIDERS/CLIENT-LOGOS-2
+    section.parter-content
+      .c-content-box.c-size-md
+        .container
+          .c-content-client-logos-slider-1.c-bordered(data-slider='owl', data-items='4', data-desktop-items='4', data-desktop-small-items='4', data-tablet-items='3', data-mobile-small-items='2', data-auto-play='5000')
+            .c-content-title-1
+              h3.c-center.c-font-bold 合作夥伴
+            .parter-box
+              .owl-carousel.owl-theme.c-theme.owl-bordered1
+                .item
+                  a(href='http://exma-square.co/')
+                    img(src='assets/images/partner-exma.png', alt='EXMA-square.co')
+                .item
+                  a(href='http://trunk-studio.com/')
+                    img(src='assets/images/partner-trunk.png', alt='')
+                    
+    section.subscribe-content
+      .c-content-box.c-size-md.c-bg-parallax
+        .container
+          .col-sm-4
+            h3.c-center.c-font-bold.c-font-white.c-font-24 
+              i.fa.fa-bolt
+              | 掌握第一手資訊
+          .col-sm-6
+            form(action='#')
+              .input-group.input-group-lg
+                input.form-control.c-square.c-font-grey-3.c-border-grey.c-theme(type='text', placeholder='Your Email Here')
+                span.input-group-btn
+                  button.btn.c-theme-btn.c-theme-border.c-btn-square.c-btn-uppercase.c-font-16(type='button') 訂閱電子報
+
+
+  include ./partials/_footer
