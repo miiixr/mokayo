@@ -1,4 +1,2 @@
 .sass*
-*.html
-*.css
 node_modules/
