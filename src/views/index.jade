@@ -73,55 +73,49 @@ block content
 
 
     //- BEGIN: CONTENT/FEATURES/FEATURES-11
-    section.about-content#about
+    section.about-content
       #about-mokayo
         h3.c-font-24.c-font-center 
           | We Are 
           span.c-font-36.c-font-white MOKAYO
-        p.c-font-16
-          | Mokayo 為台灣原住民，鄒語，原意為收成祭典，也是一種由長輩帶領新一代年輕人互相族群認識，瞭解。
+        p.c-font-17.c-font-center 
+          | Mokayo 為台灣原住民，鄒語，原意為收成祭典，也是一種由長輩帶領新一代年輕人互相族群認識、瞭解。
           br
-          | Mokayo 透過資深工程師帶領新進入門新手，讓熱情的學員，初學者也可以踏入技術的殿堂，達到技術的傳承，知識的延續。
+          | 我們透過資深工程師帶領入門新手，讓熱情的學員、初學者也可以踏入技術的殿堂，達到技術的傳承與知識的延續。
           
     section.feature-content
-      .c-content-box.c-size-md.c-bg-parallax
-        .container
-          .c-content-feature-8.c-opt-1
-            ul.c-grid
-              li
-                .c-card.c-bg-opacity-1
-                  span.icon-share
-                  h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center
-                    | 虛實整合
-                  p.c-font-white.c-font-16
-                    | 專業師資內容，業界資深工程師及架構師帶領入門，從基礎開發到實戰體驗，跟著前輩的經驗逐步學習。
-              li
-                .c-card.c-bg-opacity-1
-                  span.icon-rocket
-                  h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center
-                    | 業界經驗
-                  p.c-font-white.c-font-16
-                    | 瞭解第一手最新技術，學習最貼近業界技術趨勢的教學內容。 
-              li
-                .c-card.c-bg-opacity-1
-                  span.icon-speedometer
-                  h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center
-                    | 實際應用
-                  p.c-font-white.c-font-16
-                    | 打造完全開發環境，透過遠端方式零時差進行技術學習。
+      .container-fluid
+        .row
+          .col-xs-12.col-sm-4.c-card
+              span.icon-share
+              h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center
+                | 虛實整合
+              p.c-font-white.c-font-16
+                | 專業師資內容，業界資深工程師及架構師帶領入門，從基礎開發到實戰體驗，跟著前輩的經驗逐步學習。
+          .col-xs-12.col-sm-4.c-card
+              span.icon-rocket
+              h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center
+                | 業界經驗
+              p.c-font-white.c-font-16
+                | 瞭解第一手最新技術，學習最貼近業界技術趨勢的教學內容。
+          .col-xs-12.col-sm-4.c-card
+              span.icon-speedometer
+              h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center
+                | 實際應用
+              p.c-font-white.c-font-16
+                | 打造完全開發環境，透過遠端方式零時差進行技術學習。
 
     //- BEGIN: CONTENT/SLIDERS/TEAM-1
-    section.course-content#course
-      .c-content-box.c-size-md.c-bg-white
-        .c-content-title-1
-          h3.c-center.c-font-bold 課程
+    section.course-content.c-bg-white#course
+      .c-content-box.c-size-md
+        .c-content-title#course-title
+          h3.c-center.c-font-bold.c-font-28 近期課程
           
         .container
-          .course-bg
-          .c-content-person-1-slider(data-slider='owl',  data-items='3', data-desktop-items='3', data-tablet-items='3', data-mobile-small-items='2')
-            .owl-carousel.owl-theme.c-theme
+          .c-course-slider(data-slider='owl',  data-items='3', data-desktop-items='3', data-tablet-items='2', data-mobile-small-items='1')
+            .owl-carousel.owl-course
               .item
-                .c-content-person-1
+                .c-course-detail
                   .c-caption.c-content-overlay(style="background-image:url('assets/img/content/stock/010.jpg')")
                     .c-overlay-wrapper
                       .c-overlay-content
@@ -144,7 +138,7 @@ block content
                     | HTML, CSS, Newbie
               
               .item
-                .c-content-person-1
+                .c-course-detail
                   .c-caption.c-content-overlay(style="background-image:url('assets/img/content/stock/09.jpg')")
                     .c-overlay-wrapper
                       .c-overlay-content
@@ -167,7 +161,7 @@ block content
                     span.icon-tag
                     | Jenkins, Newbie
               .item
-                .c-content-person-1
+                .c-course-detail
                   .c-caption.c-content-overlay(style="background-image:url('assets/img/content/stock/010.jpg')")
                     .c-overlay-wrapper
                       .c-overlay-content
@@ -190,7 +184,7 @@ block content
                     | HTML, CSS, Newbie
               
               .item
-                .c-content-person-1
+                .c-course-detail
                   .c-caption.c-content-overlay(style="background-image:url('assets/img/content/stock/09.jpg')")
                     .c-overlay-wrapper
                       .c-overlay-content
@@ -211,23 +205,65 @@ block content
                     button.btn.btn-block.btn-danger(type='button') 立即報名
                   .c-tags
                     span.icon-tag
-                    | Jenkins, Newbie   
+                    | Jenkins, Newbie
+                    
+        .col-md-12
+          a.btn.btn-md.c-btn-border-1x.c-theme-btn.c-font-18.c-more(href='') 瀏覽更多課程
+          
+    // BEGIN: CONTENT/TILES/TILE-2
+    section.blog-content
+      .c-content-box
+        .c-content-tile-grid.c-bs-grid-reset-space(data-auto-height='true')
+          .row
+            .col-md-6
+              .c-content-tile-1
+                .row
+                  .col-sm-6
+                    .c-tile-content.c-bg-white.c-arrow-left
+                      .c-image.c-overlay-object(data-height='height', style='background-image: url(assets/img/content/stock/12_grey.jpg)')
+                  .col-sm-6
+                    .c-tile-content.c-bg-white(data-height='height')
+                      .c-wrapper
+                        .c-body
+                          h3.c-tile-title.c-font-bold.c-center AMP 與 RWD ？
+                          p.c-tile-body.c-font-15
+                            | 行動網路的網頁讀取的效能一直的開發者關注的議題，因此 2015 年 10 月， Google 宣布 加速行動網頁（Accelerated Mobile Pages ， AMP）計畫。
+                          a.btn.btn-sm.c-btn-grey-2.c-btn-uppercase.c-btn-bold.c-btn-border-1x.c-btn-square(href='#' target="_blank") More
+            
+            .col-md-6
+              .c-content-tile-1
+                .row
+                  .col-sm-6
+                    .c-tile-content.c-bg-white.c-arrow-left
+                      .c-image.c-overlay-object(data-height='height', style='background-image: url(assets/img/content/stock/39_grey.jpg)')
+                  .col-sm-6
+                    .c-tile-content.c-bg-white(data-height='height')
+                      .c-wrapper
+                        .c-body
+                          h3.c-tile-title.c-font-bold.c-center 新世代行動開發框架 : lonic 2
+                          p.c-tile-body.c-font-15
+                            | 網頁程式設計大約起源於西元1990年的HTML，之後更有許多不同的網頁程式語言和框架如雨後春筍般冒出。
+                          a.btn.btn-sm.c-btn-grey-2.c-btn-bold.c-btn-border-1x.c-btn-square(href='#' target="_blank") More
+            
+            .col-md-12
+              a.btn.btn-md.c-btn-border-1x.c-btn-grey-2.c-btn-bold.c-read-more(href='http://blog.mokayo.com/' target="_blank") 更多文章
 
+    
     //- BEGIN:CONTENT/SLIDERS/CLIENT-LOGOS-2
     section.parter-content
-      .c-content-box.c-size-md
-        .container
-          .c-content-client-logos-slider-1.c-bordered(data-slider='owl', data-items='4', data-desktop-items='4', data-desktop-small-items='4', data-tablet-items='3', data-mobile-small-items='2', data-auto-play='5000')
-            .c-content-title-1
-              h3.c-center.c-font-bold 合作夥伴
-            .parter-box
-              .owl-carousel.owl-theme.c-theme.owl-bordered1
-                .item
-                  a(href='http://exma-square.co/')
-                    img(src='assets/images/partner-exma.png', alt='EXMA-square.co')
-                .item
-                  a(href='http://trunk-studio.com/')
-                    img(src='assets/images/partner-trunk.png', alt='')
+      .c-content-box.c-size-sm
+        .c-content-title-1
+          h3.c-center.c-font-bold 合作夥伴
+ 
+      .container.parter-box
+        .row
+          .col-xs-12.col-sm-3
+          .col-xs-12.col-sm-3
+            a(href='http://exma-square.co/' target="_blank")
+              img(src='assets/images/partner-exma.png', alt='EXMA-square.co')
+          .col-xs-12.col-sm-3
+            a(href='http://trunk-studio.com/' target="_blank")
+              img(src='assets/images/partner-trunk.png', alt='')
                     
     section.subscribe-content
       .c-content-box.c-size-md.c-bg-parallax
