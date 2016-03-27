@@ -8,61 +8,81 @@ $yellow-c: #f2c100;
 
 .about-content{
   background: #fff;
-  padding: 30px 0 10px;
   #about-mokayo{
-    width: 80%;
     background-color: rgba($yellow-c, 0.7);
     box-shadow:0px 4px 10px rgba(#333,0.5);
-    margin-bottom: -80px;
-    padding-top: 60px;
-    span{
-      margin-left: 10px;
+    width: 82%;
+    margin: 0 auto;
+    padding: 40px 60px;
+    h3{
+      border-bottom: 1px solid #c5b96b;
+      text-indent: -80px;
+      padding: 15px 0;
+      span{
+        margin-left: 10px;
+      }
     }
     p{
       color: #3f444a + #111;
-      line-height: 26px;
-      padding: 20px 5% 10% 10%;
+      line-height: 32px;
+      padding: 20px 0 10px;
     }
   }
 }
 
 .feature-content{
-  .c-bg-parallax{
-    padding: 100px 0 60px;
-    box-shadow:0px 4px 10px rgba(#333,0.3);
-    position: relative;
-    z-index: 1;
-    .c-content-feature-8{
-      .c-card{
-        padding: 40px;
-        span{
-          display: block;
-          width: 40px;
-          height: 40px;
-          margin: 0 auto 20px;
-          color: #c5b96b;
-          font-size: 40px;
-        }
-      }
+  box-shadow:0px 4px 10px rgba(#333,0.3);
+  position: relative;
+  z-index: 1;
+  
+  >.container-fluid{
+    >.row{
+      padding: 40px;
+    }
+  }
+  
+  .c-card{
+    background-color: rgba(#777, 0.3);
+    margin-top: 30px;
+    padding: 40px;
+    
+    &:first-child{
+      margin-top: 0;
+    }
+    
+    span{
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 20px;
+      color: #c5b96b;
+      font-size: 40px;
+    }
+    p{
+      padding-top: 10px;
+      line-height: 24px;
     }
   }
 }
 
 .course-content{
   position: relative;
-  .course-bg{
+  padding-bottom: 40px;
+  .c-content-title{
     background-color: rgba($yellow-c, 0.7);
-    width: 88%;
-    height: 60% ;
+    box-shadow:0px 4px 10px rgba(#333,0.3);
     position: absolute;
-    left: 6%;
-    bottom: 0;
-    padding-top: 30px;
+    left: 9%;
+    top: 0;
+    width: 82%;
+    height: 55%;
+    padding: 40px 0;
   }
-  .c-content-person-1-slider{
-    padding-top: 40px;
-    border-top: 1px solid #ddd;
-    .c-content-person-1{
+  .c-course-slider{
+    margin: 60px 15px;
+    padding: 60px 10px 0;
+    border-top: 1px solid #c5b96b;
+    .c-course-detail{
       background-color: #333;
       .c-caption{
         height: 200px;
@@ -71,14 +91,17 @@ $yellow-c: #f2c100;
       }
       .c-body{
         padding: 30px 30px 20px;
-      }
-      .c-date{
-        color: #ddd;
-        line-height: 32px;
-        padding: 15px 0;
-       i{
-         margin-right: 10px;
-       } 
+        .c-head{
+          border-bottom: 1px solid #c5b96b;
+        }
+        .c-date{
+          color: #ddd;
+          line-height: 32px;
+          padding: 15px 0;
+          i{
+            margin-right: 10px;
+          } 
+        }
       }
       .c-tags{
         background-color: #CFD8DC;
@@ -90,21 +113,72 @@ $yellow-c: #f2c100;
       }
     }
   }
+  .c-more{
+    display: block;
+    width: 25%;
+    margin: 0  auto;
+  }
+}
+
+.blog-content{
+  padding: 80px 0 60px;
+  .c-tile-content{
+    p{
+      padding: 10px 0;
+    }
+    a{
+      position: absolute;
+      bottom: 10px;
+      right: 40px;
+    }
+  }
+  .c-read-more{
+    display: block;
+    width: 25%;
+    margin: 60px auto 0;
+  }
 }
 
 .parter-content{
-  box-shadow:0px -4px 10px rgba(#333,0.1);
-  position: relative;
-  z-index: 2;
+  padding: 40px 0;
   .parter-box{
     border-top: 1px solid #ddd;
-    padding: 40px 0 20px;
+    padding: 40px 0;
+    img{
+      display: block;
+      height: 160px;
+      margin: 0 auto;
+      opacity: 0.7;
+      transition: opacity 0.5s ease-in-out;
+      &:hover{
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
+    }
   }
 }
 
 .subscribe-content{
+  padding: 20px 0;
   i{
     color: $yellow-c;
     margin-right: 10px;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .feature-content{
+    >.container-fluid{
+      display: table;
+      border-spacing: 20px;
+      >.row{
+        display: table-row;
+      }
+    }
+    .c-card{
+      display: table-cell;
+      float: none;
+    }
   }
 }
