@@ -24,6 +24,20 @@ $quick-search_mobile-icon-font-color:											lighten($quick-search_mobile-inp
 
   		&.c-mega-menu-shown {
   			background: $header_mobile-bg-color;
-  		} 
-	} 
+  		}
+
+	}
+
+	.c-brand {
+		.c-mobile-logo {
+			// display: none;
+		    width: 50px;
+			position: absolute;
+			top: 10px;
+
+		}
+	}
+	.course-content .c-more {
+		width: auto;
+	}
 }

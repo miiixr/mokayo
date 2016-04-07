@@ -165,6 +165,7 @@ $header_desktop_min-header-mega-menu-quick-search-form-control-padding:			10px 0
 
 			.c-desktop-logo {
 				display: inline-block;
+				width: 90px;
 			}
 
 			.c-mobile-logo {
@@ -229,6 +230,9 @@ $header_desktop_min-header-mega-menu-quick-search-form-control-padding:			10px 0
 
 			.c-desktop-logo-inverse {
 				display: block;
+				width: 80px;
+    			margin-top: -15px;
+    			opacity: 0.8;
 			}
 		}
 
