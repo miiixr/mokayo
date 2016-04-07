@@ -541,7 +541,7 @@ h1{font-size:22px}
 .c-layout-header .c-navbar>.container-fluid{position:relative;padding:0 100px}
 .c-layout-header .c-brand{margin:40px 0 37px}
 .c-layout-header .c-brand .c-desktop-logo-inverse{display:none}
-.c-layout-header .c-brand .c-desktop-logo{display:inline-block}
+.c-layout-header .c-brand .c-desktop-logo{display:inline-block;width:90px}
 .c-layout-header .c-brand .c-mobile-logo,.c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand .c-desktop-logo,.c-page-on-scroll.c-layout-header-static .c-layout-header{display:none}
 .c-layout-header .c-quick-search>.form-control{padding:10px 0;height:100px}
 .c-layout-header .c-quick-search>span{top:50px;right:-2px}
@@ -551,7 +551,7 @@ h1{font-size:22px}
 .c-layout-header-fullscreen .c-layout-page,.c-layout-header-fullscreen.c-layout-header-fixed.c-layout-header-topbar .c-layout-page{margin-top:0}
 .c-page-on-scroll.c-layout-header-fixed .c-layout-header{height:65px;line-height:0}
 .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand{transition:margin .2s;margin:22px 0 19px}
-.c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand .c-desktop-logo-inverse{display:block}
+.c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-brand .c-desktop-logo-inverse{display:block;width:80px;margin-top:-15px;opacity:.8}
 .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-mega-menu .nav.navbar-nav>li>.c-link{transition:all .2s;padding:23px 15px 21px;min-height:65px}
 .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-mega-menu .nav.navbar-nav>li>.c-quick-sidebar-toggler{transition:all .2s;padding:26px 0 24px 15px}
 .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-mega-menu .nav.navbar-nav>li>.c-btn{transition:all .2s;margin:15px 15px 16px}
@@ -788,6 +788,8 @@ h1{font-size:22px}
 .c-layout-header.c-layout-header-default-mobile .c-quick-search>.form-control::-webkit-input-placeholder{color:#818e9a}
 .c-layout-header.c-layout-header-default-mobile .c-quick-search>span{color:#818e9a}
 .c-layout-header.c-layout-header-default-mobile.c-header-transparent-dark,.c-layout-header.c-layout-header-default-mobile.c-header-transparent-dark.c-mega-menu-shown{background:#fff}
+.c-brand .c-mobile-logo{width:50px;position:absolute;top:10px}
+.course-content .c-more{width:auto}
 .c-layout-header.c-layout-header-dark-mobile{background:#394048;border-bottom:0}
 .c-layout-header.c-layout-header-dark-mobile .c-brand>.c-hor-nav-toggler{position:relative;top:-1px;display:inline-block;background:#2e333a;padding:5px 8px 6px}
 .c-layout-header.c-layout-header-dark-mobile .c-brand>.c-hor-nav-toggler>.c-line{background:#8e99a6}
@@ -1594,9 +1596,9 @@ h1{font-size:22px}
 .c-content-title-3.c-right>h3,.c-content-title-3.c-right>p,.c-content-title-4.c-right>h3,.c-content-title-4.c-right>p{text-align:right}
 .c-content-overlay .c-overlay-wrapper .c-overlay-content i:hover{opacity:1;filter:alpha(opacity=100)}
 .c-content-overlay .c-overlay-wrapper.c-overlay-padding{left:10px;width:calc(100% - 20px);height:calc(100% - 20px)}
-.c-content-overlay:hover .c-overlay-wrapper{bottom:0;opacity:1;filter:alpha(opacity=100)}
-.c-content-overlay:hover .c-overlay-wrapper.c-overlay-padding{top:10px}
-.c-content-overlay .c-overlay-border{border:1px solid rgba(255,255,255,.2);top:10px;bottom:10px;left:10px;right:10px;position:absolute;z-index:1}
+.c-course-detail:hover .c-overlay-wrapper{bottom:0;opacity:1;filter:alpha(opacity=100)}
+.c-course-detail:hover .c-overlay-wrapper.c-overlay-padding{top:10px}
+.c-course-detail .c-overlay-border{border:1px solid rgba(255,255,255,.2);top:10px;bottom:10px;left:10px;right:10px;position:absolute;z-index:1}
 .c-content-loader{display:none;width:40px;height:40px;margin-top:-20px;margin-left:-30px;background:#ccc;box-shadow:0 0 20px 0 rgba(0,0,0,.15);-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.15);border-radius:100%;-webkit-animation:c-scaleout 1s infinite ease-in-out;animation:c-scaleout 1s infinite ease-in-out}
 @-webkit-keyframes c-scaleout{0%{-webkit-transform:scale(0)}
 100%{-webkit-transform:scale(1);opacity:0}
@@ -2742,7 +2744,7 @@ h1{font-size:22px}
 .c-content-tile-1 .c-tile-content .btn{margin:10px 0}
 .c-content-tile-1 .c-wrapper{padding:10%}
 .c-content-tile-1 .c-wrapper .c-tile-title{color:#3f444a;margin-top:0;font-size:20px}
-.c-content-tile-1 .c-wrapper .c-tile-body{color:#5c6873;font-size:17px}
+.c-content-tile-1 .c-wrapper .c-tile-body{color:#5c6873}
 .c-content-tile-1 .c-image{background-repeat:no-repeat;background-size:cover;background-position:center}
 @media (max-width:767px){.c-content-tile-1 .c-tile-content.c-arrow-left:after,.c-content-tile-1 .c-tile-content.c-arrow-right:after{left:calc(50% - 13px)}
 .c-content-tile-1 .c-tile-content.c-arrow-left:after{bottom:0;border-bottom-color:#fff;right:auto;top:auto;border-right-color:transparent}
